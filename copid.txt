@@ -1,0 +1,9 @@
+你说啥？？212adfaf
+
+'use strict';
+
+var fs=require('fs');
+
+var rs=fs.createReadStream();
+var ws=fs.createWriteSteam();
+rs.pipe(ws,{end:false});
